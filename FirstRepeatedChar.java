@@ -9,7 +9,7 @@ public class FirstRepeatedChar {
         String input = "Java articles are Awesome";
 
         char result = input.chars()
-                .mapToObj(c -> Character.toLowerCase(Character.valueOf((char) c)))
+                .mapToObj(c -> Character.toLowerCase((char) c))
                 .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new,
                         Collectors.counting()))
                 .entrySet()

@@ -8,7 +8,7 @@ public class CountOfEachCharInString {
     public static void main(String[] args) {
         String inp = "malayalam";
 
-        Map<Character, Long> result = inp.chars().mapToObj(c -> Character.toLowerCase(Character.valueOf((char) c)))
+        Map<Character, Long> result = inp.chars().mapToObj(c -> (char) Character.toLowerCase(c))
                 .collect(Collectors.groupingBy(c -> c, LinkedHashMap::new, Collectors.counting()));
 
         System.out.println(result);
