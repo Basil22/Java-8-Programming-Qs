@@ -15,7 +15,7 @@ public class SortExamples {
                                 .sorted(Comparator.comparing(String::length))
                                 .collect(Collectors.toList());
 
-                // System.out.println(output);
+                System.out.println(output);
 
                 // Example 2: Search by length (Case Insensitive)
                 List<String> input2 = Arrays.asList("Banana", "apple", "Cherry", "mango");
@@ -24,7 +24,7 @@ public class SortExamples {
                                 .sorted(Comparator.comparing(String::toLowerCase))
                                 .collect(Collectors.toList());
 
-                // System.out.println(output2);
+                System.out.println(output2);
 
                 // Example 3: Sort by last character of String
                 List<String> input3 = Arrays.asList("banana", "apple", "kiwi", "mango");
@@ -33,7 +33,7 @@ public class SortExamples {
                                 .sorted(Comparator.comparing(a -> a.charAt(a.length() - 1)))
                                 .collect(Collectors.toList());
 
-                // System.out.println(output3);
+                System.out.println(output3);
 
                 // Example 4: Sort by number of vowels
 
